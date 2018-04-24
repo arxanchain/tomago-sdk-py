@@ -4,12 +4,12 @@ from setuptools import setup, find_packages
 import io
 
 setup(
-    name='wallet-sdk-py',
+    name='tomago-sdk-py',
     version='1.5.1',
-    description="Python SDKs for Blockchain Wallet.",
+    description="Python SDKs for Blockchain."
     long_description=io.open('README.md', encoding='utf-8').read(),
-    url='https://github.com/arxanchain/wallet-sdk-py/',
-    download_url='https://github.com/arxanchain/wallet-sdk-py/',
+    url='https://github.com/arxanchain/tomago-sdk-py/',
+    download_url='https://github.com/arxanchain/tomago-sdk-py/',
     packages=find_packages(),
     platforms='any',
     install_requires=[

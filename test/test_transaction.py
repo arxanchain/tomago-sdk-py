@@ -143,12 +143,6 @@ class TransactionTest(unittest.TestCase):
                 _, resp = bc.query({}, body)
                 self.assertEqual(resp["Code"], "107")
 
-
-
-
-
-
-
     def test_query_txn_succ(self):
         """Test query transaction in blockchain successfully returned. """
 
@@ -164,7 +158,6 @@ class TransactionTest(unittest.TestCase):
             with mock.patch('requests.get', mock_do_get):
                 _, resp = bc.query_txn({}, txid)
                 self.assertEqual(resp["Code"], "0")
-
 
     def test_query_txn_err(self):
         """Test query transaction in blockchain error code. """

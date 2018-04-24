@@ -25,7 +25,7 @@ BaaS Platform via Tomago.
 
 Run following command to download Python SDK
 
-```python
+```code
 $ git clone https://github.com/arxanchain/tomago-sdk-py.git
 $ cd tomago-sdk-py
 $ python setup.py install
@@ -73,7 +73,7 @@ you need to add param enable_crypto=False.
 To invoke the SDK API, you first have to create a blockchain client as follows:
 
 ```python
->>> from tomago.api.blockchain import WalletClient
+>>> from tomago.api.blockchain import BlockChain
 >>> bc = BlockChain(client)
 ```
 

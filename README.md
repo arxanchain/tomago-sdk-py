@@ -87,11 +87,11 @@ as follows:
 
 ```python
 >>> header = {
-...     "Channel-Id": "mychannel"
+...     "Channel-Id": "pubchain"
 ...     }
 >>> body = {
 ...     "payload":  {
-...         "chaincode_id": "mycc",
+...         "chaincode_id": "pubchain-mycc",
 ...         "args": ["invoke", "a", "b", "1"],
 ...     }
 ... }
@@ -111,11 +111,11 @@ as follows:
 
 ```python
 >>> header = {
-...     "Channel-Id": "mychannel"
+...     "Channel-Id": "pubchain"
 ...     }
 >>> body = {
 ...     "payload":  {
-...         "chaincode_id": "mycc",
+...         "chaincode_id": "pubchain-mycc",
 ...         "args": ["query", "a"],
 ...     }
 ... }
@@ -128,7 +128,7 @@ as follows:
 ```python
 >>> txid = "mytxid"
 >>> header = {
-...     "Channel-Id": "mychannel"
+...     "Channel-Id": "pubchain"
 ...     }
 >>> _, resp = bc.query_txn(header, txid)
 >>> print resp

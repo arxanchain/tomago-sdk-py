@@ -47,7 +47,6 @@ class BlockChain(object):
                     self.__client.get_ip(),
                     self.__route_tag,
                     VERSION,
-                    self.__path,
                     req_path 
                     ])
         else:
@@ -64,6 +63,7 @@ class BlockChain(object):
 
         self.__client.set_url(request_url)
         req_params = {
+                "url": request_url,
                 "body": body,
                 "headers": header
                 }
@@ -105,7 +105,7 @@ class BlockChain(object):
     def query_txn(self, header, txnid):
         """Query status of a transaction in the blockchain."""
 
-        req_path = "blockchain/query/" + txnid 
+        req_path = "blockchain/transaction/" + txnid 
         method = self.__client.do_get
         req_params = self.__set_params(
                 header,

@@ -14,7 +14,7 @@ setup(
     platforms='any',
     install_requires=[
         "mock==2.0.0",
-        "requests==2.18.4",
+        "requests==2.20.0",
         "six==1.11.0",
         "urllib3==1.22",
         "py-common==v2.0.1"

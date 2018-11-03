@@ -58,15 +58,15 @@ to the BaaS service needs to use this object., you can register a client object 
 >>> from rest.api.api import Client
 >>> apikey = "pWEzB4yMM1518346407"
 >>> cert_path = "/usr/local/lib/python2.7/site-packages/py_common-2.0.1-py2.7.egg/cryption/ecc/certs"
->>> ent_sign = ""
+>>> ent_sign_param = {}
 >>> ip_addr = "http://127.0.0.1:9143"
->>> client = Client(apikey, cert_path, ent_sign, ip_addr)
+>>> client = Client(apikey, cert_path, ent_sign_param, ip_addr)
 ```
 
 * **apikey** is used to set the API access key applied on `ChainConsole` management page,
 * **cert_path** is the path of your private key file and tls certificate,
 * **ip_addr** is the IP address of the BAAS server entrance(*wasabi* or *wallet* service). 
-* **ent_sign** is the enterprise sign params, but it's unnecessary for tomago, so it can be empty string("")
+* **ent_sign_param** is the enterprise sign params dictionary, but it's unnecessary for tomago, so it can be empty
 
 If you want to bypass the wasabi service, you need to add param enable_crypto=False.
 
